@@ -2,12 +2,12 @@
        src: url(Arapey/Arapey-Regular.ttf);
        font-family: arapey;
    }
-   
+
    @font-face {
        src: url(Arapey/cinzel-Regular.ttf);
        font-family: cinzel;
    }
-   
+
    body {
        font-family: 'arapey';
        background-color: #252529;
@@ -16,7 +16,7 @@
        line-height: 1.6;
    }
    /*css variable*/
-   
+
     :root {
        --primary-color: #b90415;
        --primary-color-hover: #d30713;
@@ -24,36 +24,37 @@
        --secondary-color-hover: #143f85;
        --light-color: #f4f4f4;
    }
-   
+
    .btn {
        text-decoration: none;
-       padding: 12px;
+       padding: 9px;
        display: inline-block;
        color: #fff;
        border-radius: 3px;
    }
-   
+
    .btn-primary {
        background: var(--primary-color);
    }
-   
+
    .btn-secondary {
        color: var(--secondary-color);
    }
-   
+
    .mb {
        margin-bottom: 8px;
    }
-   
+
    .mt {
        margin-top: 8px;
    }
-   
+
    .btn-primary:hover {
        background: var(--primary-color-hover);
    }
+
    /*showcase*/
-   
+
    #showcase {
        margin: 0;
        padding: 0;
@@ -65,24 +66,24 @@
        overflow: hidden;
        position: relative;
    }
-   
+
    #showcase .container {
        margin-top: 30vh;
    }
-   
+
    .ts {
        text-shadow: 2px 2px 1px #252529;
    }
-   
+
    #showcase h1 {
        font-size: 3.5rem;
        margin-bottom: 0;
    }
-   
+
    #showcase h2 {
        font-size: 26px;
    }
-   
+
    #showcase a#read {
        margin-top: 10px;
        padding: 3px 8px;
@@ -97,34 +98,34 @@
        border: 1px solid #eee;
        background: #333;
    }
-   
+
    #showcase a#read:hover {
        background-color: #444;
    }
-   
+
    .lead {
        font-size: 19px;
        color: white;
        ;
    }
-   
+
    .space {
        word-spacing: 6px;
        letter-spacing: 3px;
    }
-   
+
    .light {
        font-size: 13px;
        ;
    }
-   
+
    div.container {
        text-align: center;
        margin: 0 auto;
        padding: 0 48px;
    }
    /*navigation styling*/
-   
+
    nav {
        height: 44px;
        width: 100%;
@@ -132,18 +133,18 @@
        color: #eee;
        position: fixed;
    }
-   
+
    nav ul {
        padding: 0;
        margin: 0;
    }
-   
+
    nav li {
        display: inline;
        float: left;
        font-size: 18px
    }
-   
+
    nav a {
        display: inline-block;
        text-align: center;
@@ -153,15 +154,15 @@
        color: #eee;
        text-transform: uppercase;
    }
-   
+
    nav li:hover {
        background-color: #444;
    }
-   
+
    nav a#openup {
        display: none;
    }
-   
+
    nav li.register {
        float: right;
        border-right: 2px solid white;
@@ -169,14 +170,14 @@
        display: inline-block;
        font-weight: 400;
    }
-   
+
    span#design {
        color: red;
        font-style: italic;
        font-size: 18px;
        font-weight: 600;
    }
-   
+
    span#patrol {
        font-style: italic;
        font-size: 18px;
@@ -186,14 +187,14 @@
     .top {
         z-index: 30;
     }
-    
+
     #des {
         position: relative;
         width: 100%;
         height: 300px;
         background-color: #252529
     }
-    
+
     #des:before {
         position: absolute;
         content: '';
@@ -205,7 +206,7 @@
         transform: skewy(10deg);
 
     }
-    
+
     #des:after {
         position: absolute;
         content: '';
@@ -215,69 +216,129 @@
         right: 0;
         background: inherit;
         transform: skewy(-10deg);
-        
+
     }
-    
+
     #des div.container {
         padding-top: 110px;
     }*/
-   
+
    .section-head {
        padding-top: 10px;
        font-size: 30px;
        margin: 0px;
    }
-   
+
    .capitalize {
        text-transform: capitalize;
        font-size: 18px;
    }
-   
+
    .small {
        text-transform: lowercase;
        font-size: 16px;
    }
-   
+
    .uppercase {
        text-transform: uppercase;
    }
-   
+
    .wheat {
        color: #eee;
    }
-   
+
    h1,
    h2,
    h3 {
        font-family: cinzel;
    }
-   
+
    .bg-light {
        background-color: #eee;
        color: black;
    }
    /*tutorials*/
-   
+
    #tutorials {
        padding-top: 10px;
    }
-   
+
    .tutorials {
        display: grid;
        grid-gap: 20px;
        grid-template-columns: 1fr 1fr;
        text-align: left;
    }
-   
+
    .tutorials img {
        width: 90%;
        height: 90%;
    }
-   
+
    .text-center {
        text-align: center;
    }
-   
+
+
+
+
+   /*Features*/
+
+   #feature{
+     padding-left: 8em 0;
+     background: #343233;
+
+
+   }
+   .features-content img{
+     margin-top:40px;
+     width: 90%;
+     height: 450px;
+   }
+   .features-content{
+     display: grid;
+     grid-gap: 30px;
+     grid-template-columns: 1fr 1fr;
+     text-align: left;
+   }
+
+   /*subscribe*/
+#subscribe{
+
+}
+#subscribe h2{
+  color: #8d8273
+}
+#subscribe input{
+  width: 80%;
+  margin-left: 2em 0;
+  background-color: none;
+  border-radius: 1px solid #8d8273;
+  padding-left: 20px;
+  font-family:inherit;
+  font-weight: 400;
+  color: rgba(211,165, 100);
+
+}
+#subscribe input:focus{
+  border: 2px solid #8d8273;
+  outline: none;
+}
+input::placeholder{
+  color:  #8d8273;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-style:   italic;
+  text-align: center;
+
+}
+
+   /*Footer*/
+footer{
+  background: #343233;
+
+}
+
    .footer-cols {
        display: grid;
        grid-gap: 10px;
@@ -287,47 +348,52 @@
        font-size: 16px;
        color: #fff;
    }
-   
    .footer-cols ul a {
        color: #fff;
        text-decoration: none;
        list-style: none,
    }
-   
+
    .footer-cols ul li {
        color: #fff;
        text-decoration: none;
        list-style: none;
    }
-   
+
    .footer-cols ul li a {
        color: #fff;
        text-decoration: none;
    }
-   
+
    .footer-cols ul.first li a:hover {
        text-decoration: underline;
        font-size: 22px;
        padding-bottom: 5px;
    }
-   
+
    .fa-facebook:hover,
    .fa-twitter:hover {
        font-size: 22px;
        color: var(--secondary-color-hover);
    }
-   
+
    .fa-linkedin:hover {
        font-size: 22px;
        color: var(--secondary-color);
    }
-   
+
    .fa-youtube:hover,
    .fa-instagram:hover {
        font-size: 22px;
        color: var(--primary-color-hover);
    }
-   
+
+
+
+
+  /*form*/
+
+
    @media screen and (max-width: 800px) {
        .hide-on-small {
            display: none;
@@ -360,6 +426,14 @@
        .tutorials img {
            width: 100%;
            height: 200px;
+       }
+
+       .features-content {
+           grid-template-columns: 1fr;
+       }
+       .features-content img {
+           width: 100%;
+           height: 300px;
        }
        nav {
            height: auto;
@@ -404,17 +478,17 @@
            position: relative;
        }
    }
-   
+
    .cf:before,
    .cf:after {
        content: "";
        display: table;
    }
-   
+
    .cf:after {
        clear: both;
    }
-   
+
    .cf {
        zoom: 1;
    }
